@@ -3,13 +3,14 @@ import App from "./App"
 import Index from "./pages/Index"
 import Show from "./pages/Show"
 import { indexLoader, showLoader } from "./loaders.jsx";
+import { createAction } from "./actions"
 
 const router = createBrowserRouter(createRoutesFromElements(
     <>
         <Route path="/" element={<App/>}>
             <Route path='' element={<Index/>} loader={indexLoader}/>
             <Route path='restrooms/:id' element={<Show/>} loader={showLoader}/>
-            <Route/>
+            <Route path="create" action={createAction}/>
             <Route/>
             <Route/>
         </Route>

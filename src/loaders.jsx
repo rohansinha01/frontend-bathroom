@@ -15,3 +15,4 @@ export const showLoader = async ({ params }) => {
     const aPet = await response.json()
     return aPet
 }
+
