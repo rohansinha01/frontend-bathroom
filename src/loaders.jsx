@@ -5,14 +5,14 @@ console.log(URL)
 // Index Loader
 export const indexLoader = async () => {
     const response = await fetch(`${URL}`)
-    const allPets = await response.json()
-    return allPets
+    const allRestrooms = await response.json()
+    return allRestrooms
 }
 
 // Show Loader
 export const showLoader = async ({ params }) => {
     const response = await fetch(`${URL}${params.id}/`)
-    const aPet = await response.json()
-    return aPet
+    const aRestroom = await response.json()
+    return aRestroom
 }
 
