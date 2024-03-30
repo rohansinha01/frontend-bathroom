@@ -11,7 +11,7 @@ export default function Show(props) {
             <h1>{aRestroom.name}</h1>
             <h1>{aRestroom.location}</h1>
             <h2>{aRestroom.cleanliness}</h2>
-            <h2>{aRestroom.purchase}</h2>
+            <h2>{aRestroom.purchase? 'Customers Only': "Let it rip!"}</h2>
             <div>
                 {/* Update form */}
                 <Form action={`/update/${id}/`} method="POST">
