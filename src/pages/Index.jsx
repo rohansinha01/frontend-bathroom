@@ -5,7 +5,10 @@ export default function Index(props) {
     const allRestrooms = useLoaderData()
 
     return (
-        <>
+        <> 
+        
+        {allRestrooms.map((restroom, i) => <Restroom restroom={restroom} key={i}/>)}
+        <hr />
             <h1>Add A Bathroom</h1>
             <Form action="/create" method="post">
                 <label htmlFor="name">
@@ -22,8 +25,8 @@ export default function Index(props) {
                 </label>
                 <button>Add New Bathroom</button>
             </Form>
-            <hr />
-            {allRestrooms.map((restroom, i) => <Restroom restroom={restroom} key={i}/>)}
+            
+           
         </>
     )
 }

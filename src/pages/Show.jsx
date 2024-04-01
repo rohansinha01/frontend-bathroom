@@ -32,16 +32,16 @@ export default function Show(props) {
                         Did they update their policy?
                         <input type="boolean" id="purchase" name="purchase" defaultValue={aRestroom.purchase}/>
                     </label>
-                    <button style={{"backgroundColor": "blue"}}>Update our Bathroom</button>
+                    <button style={{"backgroundColor": "blue"}}>Clean Up the Bathroom Data (Update Data)</button>
                 </Form>
 
                 {/* Delete Form */}
                 <Form action={`/delete/${id}/`} method="post">
-                    <button style={{"backgroundColor": "red"}}>Remove Bathroom</button>
+                    <button style={{"backgroundColor": "red"}}>Close Down Bathroom (Delete)</button>
                 </Form>
             </div>
             <Link to="/">
-                <button>Go Back</button>
+                <button>Back Home</button>
             </Link>
         </div>
     )
