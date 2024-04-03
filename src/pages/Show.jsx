@@ -22,7 +22,7 @@ export default function Show(props) {
                     
                     <label htmlFor="location">
                         Did they move?
-                        <input type="text" id="location" name="location" defaultValue={aRestroom.age}/>
+                        <input type="text" id="location" name="location" defaultValue={aRestroom.location}/>
                     </label>
                     <label htmlFor="cleanliness">
                         Did they clean up?

@@ -1,15 +1,24 @@
 import Restroom from "../components/Restroom"
 import { Form, useLoaderData } from "react-router-dom"
+import {React, useState } from "react"
 
 export default function Index(props) {
     const allRestrooms = useLoaderData()
 
+    const [showForm, setShowForm] = useState(true);
+
+    const toggleForm = () => {
+        setShowForm(!showForm)
+    }
+
     return (
         <> 
-        
+
+
         {allRestrooms.map((restroom, i) => <Restroom restroom={restroom} key={i}/>)}
         <hr />
-            <h1>Add A Bathroom</h1>
+            <h1>Add a New Restroom</h1>
+            {/* <h1>{showForm && <button onClick={toggleForm}>Hide Button</button>}</h1> */}
             <Form action="/create" method="post">
                 <label htmlFor="name">
                     <input type="text" name="name" id="name" placeholder="Name"/>

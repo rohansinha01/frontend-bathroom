@@ -40,3 +40,32 @@
 .read-the-docs {
   color: #888;
 }
+
+.Header {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-around;
+}
+
+.site {
+  display: flex;
+  
+
+}
+
+.home {
+  margin: 10px
+  
+}
+
+input {
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 0.1rem solid #d1d1d1;
+  border-radius: .4rem;
+  box-shadow: none;
+  box-sizing: inherit;
+  height: 3.8rem;
+  padding: .6rem 1.0rem .7rem;
+  width: 100%;
+}

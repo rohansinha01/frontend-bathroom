@@ -4,10 +4,10 @@ export default function Header() {
 
     return (
         <div className='Header'>
-          <h1>
+          <h1 className="site">
             People Be Poopin
           </h1>
-        <Link to='/' >Home</Link>
+        <div className="home"><Link to='/' ><button>Home</button></Link></div>
         </div>
     )
 }
