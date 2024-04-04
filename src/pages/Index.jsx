@@ -19,7 +19,8 @@ export default function Index(props) {
         <hr />
             <h1>Add a New Restroom</h1>
             {/* <h1>{showForm && <button onClick={toggleForm}>Hide Button</button>}</h1> */}
-            <Form action="/create" method="post">
+            <Form action="/create" method="post" >
+                <div className="form">
                 <label htmlFor="name">
                     <input type="text" name="name" id="name" placeholder="Name"/>
                 </label>
@@ -32,7 +33,7 @@ export default function Index(props) {
                 <label htmlFor="purchase">
                     <input type="boolean" name="purchase" id="purchase" placeholder="Purchase Necessary?" />
                 </label>
-                <button>Add New Bathroom</button>
+                <button>Add New Bathroom</button></div>
             </Form>
             
            

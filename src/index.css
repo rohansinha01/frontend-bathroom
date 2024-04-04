@@ -5,8 +5,8 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #b8b2b2;
-
+  background: radial-gradient(circle at center, #96dff5, #0244fb);
+  border-radius: 50%;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -23,7 +23,7 @@ a:hover {
 }
 
 body {
-
+  color: white;
 }
 
 h1 {
@@ -62,3 +62,5 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+

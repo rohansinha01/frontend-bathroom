@@ -1,4 +1,4 @@
-# Name: Rohan
+# Developer Name: Rohan
 # App Name: People Be Poopin'
 
 ## Overview
@@ -7,7 +7,8 @@ People Be Poopin'. People Be needing to know where to go to the bathroom. People
 
 For the frontend, I will have an index page to show all the bathrooms with their cleanliness rating. When clicked on, the show pages will show the name assigned to this bathroom, location, cleanliness, and whether you have to purchase anything to use the restroom.
 
-- Deployed Link: ** add later **
+- Deployed Link: https://people-be-poopin.netlify.app/
+- Github: https://github.com/rohansinha01/frontend-bathroom
 
 ## Frontend Route Map
 

@@ -6,7 +6,10 @@ export default function Show(props) {
     console.log(aRestroom.purchase)
 
     const id = aRestroom?.url.split("/")[4]
+
     return (
+
+
         <div>
             <h1>{aRestroom.name}</h1>
             <h1>{aRestroom.location}</h1>
@@ -32,12 +35,12 @@ export default function Show(props) {
                         Did they update their policy?
                         <input type="boolean" id="purchase" name="purchase" defaultValue={aRestroom.purchase}/>
                     </label>
-                    <button style={{"backgroundColor": "blue"}}>Clean Up the Bathroom Data (Update Data)</button>
+                    <button style={{"backgroundColor": "#B0E0E6"}}>Clean Up the Bathroom Data (Update Data)</button>
                 </Form>
 
                 {/* Delete Form */}
                 <Form action={`/delete/${id}/`} method="post">
-                    <button style={{"backgroundColor": "red"}}>Close Down Bathroom (Delete)</button>
+                    <button style={{"backgroundColor": "#BC544B"}}>Close Down Bathroom (Delete)</button>
                 </Form>
             </div>
             <Link to="/">
