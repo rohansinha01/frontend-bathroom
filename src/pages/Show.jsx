@@ -32,7 +32,7 @@ export default function Show(props) {
                         <input type="number" id="cleanliness" name="cleanliness" defaultValue={aRestroom.cleanliness}/>
                     </label>
                     <label htmlFor="purchase">
-                        Did they update their policy?
+                        True or False: Do you have to purchase an item to use their restroom?
                         <input type="boolean" id="purchase" name="purchase" defaultValue={aRestroom.purchase}/>
                     </label>
                     <button style={{"backgroundColor": "#B0E0E6"}}>Clean Up the Bathroom Data (Update Data)</button>
