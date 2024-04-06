@@ -10,6 +10,12 @@ For the frontend, I will have an index page to show all the bathrooms with their
 - Deployed Link: https://people-be-poopin.netlify.app/
 - Github: https://github.com/rohansinha01/frontend-bathroom
 
+## Tech Used
+-    "milligram": "^1.4.1",
+-    "react": "^18.2.0",
+-    "react-dom": "^18.2.0",
+-    "react-router-dom": "^6.22.3"
+
 ## Frontend Route Map
 
 | Route Name | Path  | Action | Description |
